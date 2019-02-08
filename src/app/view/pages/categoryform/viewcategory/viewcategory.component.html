@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+
+
+    <div class="silderdiv">
+      <div class="polaroid">
+        <img src="../../../assets/xxx.jpg" alt="Norway" style="position: absolute; top: 1%; left: 0.5%; width:540px; height: 190px">
+
+      </div>
+
+      <div class="polaroid1">
+        <img src="../../../assets/zzzz.jpg" alt="Norway" style="position: absolute; top: 1%; left: 8px; width:560px; height: 190px">
+
+      </div>
+      <div class="polaroid2">
+        <img src="../../../assets/yyy.jpg" alt="Norway" style="position: absolute; top: 1%; left: 6px; width:540px; height: 190px">
+
+      </div>
+  </div>
+  <div class="down">
+
+ <!--<form #frmCategor="ngForm">-->
+  
+    <div class="form-group">
+      <label for="txtcatid">Category ID:</label>
+     <!-- <input name="txtcatid"[(ngModel)]="selectCategory.catId" type="text" class="form-control" id="txtcatid">-->
+
+
+     <input  formControlName="txtcatid"   name="txtcatid"
+             
+              type="text"
+              class="form-control"
+              id="txtcatid">
+      <div class="alert alert-danger">Enter the 4 charctor ID.</div>
+
+    </div>
+    <div class="form-group">
+      <label for="txtcatName">Category  Name:</label>
+      <input
+        name="txtcatName"
+       
+        type="text"
+        class="form-control"
+        id="txtcatName">
+    <div class="alert alert-danger">Enter the valid Category Name.</div>
+      <!--   <div *ngIf="txtcatName.touched && txtcatName.invalid" class="alert alert-danger"></div>
+       <div ngIf="username.errors.required">Category Name is required</div>
+       <div ngIf="username.errors.minlength">Category Name Should be minimum 3 characters{{txtcatName.errors}} characters </div>
+
+
+       <!--<input name="txtcatName" [(ngModel)]="selectCategory.cname" type="text" class="form-control" id="txtcatName">-->
+    </div>
+
+
+
+    <div>
+      <button name="saveb"  (click)="saveCategory()" type="button" class="btn btn-primary">Save</button>&nbsp;&nbsp;
+      <button name="searchb"(click)="searchCategory()" type="button" class="btn btn-success">Search</button>&nbsp;&nbsp;
+
+      <button type="button" class="btn btn-warning">Update</button>&nbsp;&nbsp;
+      <button type="button" class="btn btn-danger">Delete</button>&nbsp;&nbsp;
+    </div>
+
+  </div>
+</div>
+<div class="downline"></div>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body class="bd">
+
+<div class="container">
+
+
+
+
+
+  <div class="silderdiv">
+    <div class="polaroid">
+      <img src="../../../assets/fff.jpg" alt="Norway" style="position: absolute; top: 1%; left: 0.5%; width:540px; height: 190px">
+    </div>
+    <div class="polaroid1">
+      <img src="../../../assets/ccc.jpg" alt="Norway" style="position: absolute; top: 1%; left: 8px; width:560px; height: 190px">
+
+    </div>
+    <div class="polaroid2">
+      <img src="../../../assets/kkk.jpg" alt="Norway" style="position: absolute; top: 1%; left: 6px; width:540px; height: 190px">
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+<div class="down">
+
+ <form [formGroup]="employeeForm">
+    <div class="form-group">
+      <label for="txteid">Emloyee ID:</label>
+      <input name="txteid" type="text" class="form-control" id="txteid">
+    </div>
+    <div class="form-group">
+      <label for="txtename">Employee Name:</label>
+      <input name="txtename" type="text" class="form-control" id="txtename">
+    </div>
+    <div class="form-group">
+      <label for="txtaddr">Address:</label>
+      <input name="txtaddr"  type="text" class="form-control" id="txtaddr">
+    </div>
+    <div class="form-group">
+      <label for="txtemail">Email:</label>
+      <input name="txtemail"  type="text" class="form-control" id="txtemail">
+    </div>
+    <div class="form-group">
+      <label for="txttele">Tele:</label>
+      <input name="txttele"  type="text" class="form-control" id="txttele">
+    </div>
+    <div>
+      <button name="saveb" (click)="saveEmployee()"  type="button" class="btn btn-primary">Save</button>&nbsp;&nbsp;
+      <button type="searchb"(click)="searchEmployee()" class="btn btn-success">Search</button>&nbsp;&nbsp;
+
+      <button type="button" (click)="updateEmployee()" class="btn btn-warning">Update</button>&nbsp;&nbsp;
+      <button type="button" (click)="deleteEmployee()" class="btn btn-danger">Delete</button>&nbsp;&nbsp;
+
+
+
+    </div>
+
+
+
+</form>
+</div>
+</div>
+<div class="downline"></div>
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!----<p>
+  home-layout works!
+</p>
+
+<button routerLink="page1">page 1</button>
+<button routerLink="page2">page 2</button>
+<button routerLink="viewcustomer">customer</button>
+<button (click) = "logout()">Logout</button>
+<router-outlet></router-outlet>
+-->
+<!---------------------------------------------------------->
+
+<html>
+
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<!------------------------------------>
+<body>
+  <nav style="background-color: blue" class="navbar navbar-inverse" >
+    <div class="container-fluid" >
+      <div class="navbar-header" >
+        <a class="navbar-brand" href="#">Sandu R
+          estaurent</a>
+      </div>
+      <ul class="nav navbar-nav" >
+        <li > <a style="  font-size: 20px"  routerLink="viewhome" routerLinkActive="active" class="nav-link"  >Home</a></li>
+     <!--<li > <a style="  font-size: 20px"  routerLink="page1" routerLinkActive="active" class="nav-link"  >page1</a></li>
+        <li><a style="  font-size: 20px" routerLink="page2" routerLinkActive="active" class="nav-link">page2</a></li>-->
+        <li><a style="  font-size: 20px" routerLink="viewcustomer" routerLinkActive="active" class="nav-link">Customer</a></li>
+        <li><a style="  font-size: 20px" routerLink="viewemployee" routerLinkActive="active" class="nav-link">Employee</a></li>
+        <li><a style="  font-size: 20px" routerLink="viewfoods" routerLinkActive="active" class="nav-link">Food</a></li>
+        <li><a style="  font-size: 20px" routerLink="viewcategory" routerLinkActive="active" class="nav-link">Category</a></li>
+       <li><a style="  font-size: 20px" routerLink="viewdelivery" routerLinkActive="active" class="nav-link">Delivery</a></li>
+       <li><a style="  font-size: 20px" routerLink="viewpayment" routerLinkActive="active" class="nav-link">Payment</a></li>
+         <li><a (click) = "logout()">Logout  </a></li>
+       
+      </ul>
+    </div>
+  </nav>
+  
+<div class="container">
+  <div>
+    <router-outlet></router-outlet>
+  </div>
+
+</div>
+
+</body>
+
+
+</html>

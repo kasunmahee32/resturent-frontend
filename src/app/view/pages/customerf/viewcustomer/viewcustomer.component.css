@@ -1,0 +1,60 @@
+.down{
+  position: absolute;
+  top: 38%;
+  width: 40%;
+  left: 33%;
+}
+.downline{
+  position: absolute;
+  top:92.5%;
+  width:100%;
+  height: 60px;
+  left: 0%;
+  background-color: black;
+}
+
+
+.silderdiv{
+  position: absolute;
+  top:6%;
+  width:100%;
+  height: 200px;
+  left: 0%;
+
+}
+div.polaroid {
+  position: absolute;
+  top: 2%;
+  left: 0.5%;
+  width: 550px;
+  height: 200px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+}
+div.polaroid1 {
+  position: absolute;
+  top: 2%;
+  left: 568px;
+  width: 575px;
+  height: 200px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+}
+div.polaroid2 {
+  position: absolute;
+  top: 2%;
+  left: 1149px;
+  width: 550px;
+  height: 200px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+}
+
+.abc{
+    position: absolute;
+    top: 34.5%;
+    width: 650px;
+    left: 570px;
+
+
+}
